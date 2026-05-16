@@ -2080,6 +2080,287 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px !important;
 }
 
+.ve-logo img.ve-logo-img{
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 768px){
+    .ve-logo img.ve-logo-img{
+        height: 55px;
+    }
+}
+
+/* =========================================
+   SEXY PREMIUM FOOTER - METRAGE
+========================================= */
+
+.ve-footer{
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(135deg,#021224 0%,#04284c 45%,#021224 100%);
+    padding-top: 110px;
+    color: #fff;
+}
+
+/* LIGHT EFFECTS */
+
+.ve-footer::before{
+    content:'';
+    position:absolute;
+    width:550px;
+    height:550px;
+    background:rgba(216,155,29,0.08);
+    border-radius:50%;
+    top:-250px;
+    right:-200px;
+    filter: blur(40px);
+}
+
+.ve-footer::after{
+    content:'';
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:rgba(255,255,255,0.03);
+    border-radius:50%;
+    bottom:-220px;
+    left:-150px;
+    filter: blur(40px);
+}
+
+/* GRID OVERLAY */
+
+.ve-footer-overlay{
+    position:absolute;
+    inset:0;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events:none;
+}
+
+.ve-footer .container{
+    position:relative;
+    z-index:2;
+}
+
+/* LOGO */
+
+.ve-footer-logo{
+    height:95px;
+    width:auto;
+    object-fit:contain;
+    margin-bottom:30px;
+    filter: drop-shadow(0 0 18px rgba(255,255,255,0.08));
+    transition:0.4s ease;
+}
+
+.ve-footer-logo:hover{
+    transform: scale(1.05);
+}
+
+/* DESCRIPTION */
+
+.ve-footer-desc{
+    color:rgba(255,255,255,0.78);
+    line-height:1.9;
+    font-size:17px;
+    max-width:340px;
+    margin-bottom:35px;
+    letter-spacing:0.3px;
+}
+
+/* TITLES */
+
+.ve-footer-title{
+    font-size:26px;
+    font-weight:700;
+    margin-bottom:40px;
+    color:#fff;
+    position:relative;
+    display:inline-block;
+}
+
+.ve-footer-title::after{
+    content:'';
+    position:absolute;
+    width:65%;
+    height:4px;
+    left:0;
+    bottom:-12px;
+    border-radius:50px;
+    background:linear-gradient(to right,#d89b1d,#ffcb65);
+}
+
+/* LINKS */
+
+.ve-footer-links{
+    padding:0;
+    margin:0;
+}
+
+.ve-footer-links li{
+    list-style:none;
+    margin-bottom:20px;
+}
+
+.ve-footer-links li a{
+    color:rgba(255,255,255,0.82);
+    text-decoration:none;
+    font-size:18px;
+    font-weight:500;
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    transition:0.35s ease;
+}
+
+.ve-footer-links li a i{
+    color:#d89b1d;
+    transition:0.35s ease;
+}
+
+.ve-footer-links li a:hover{
+    color:#fff;
+    transform:translateX(8px);
+}
+
+.ve-footer-links li a:hover i{
+    transform:translateX(4px);
+}
+
+/* CONTACT */
+
+.ve-contact-list{
+    padding:0;
+    margin:0;
+}
+
+.ve-contact-list li{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-bottom:25px;
+}
+
+.ve-contact-icon{
+    min-width:52px;
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.06);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#d89b1d;
+    font-size:18px;
+    transition:0.35s ease;
+    backdrop-filter:blur(10px);
+}
+
+.ve-contact-list li:hover .ve-contact-icon{
+    background:#d89b1d;
+    color:#021224;
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(216,155,29,0.3);
+}
+
+.ve-contact-list span{
+    color:rgba(255,255,255,0.84);
+    font-size:17px;
+    line-height:1.7;
+}
+
+/* SOCIAL */
+
+.ve-social-icons{
+    display:flex;
+    gap:18px;
+}
+
+.ve-social-icon{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.06);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff !important;
+    font-size:18px;
+    transition:0.35s ease;
+    backdrop-filter:blur(10px);
+}
+
+.ve-social-icon:hover{
+    background:linear-gradient(135deg,#d89b1d,#ffcb65);
+    color:#021224 !important;
+    transform:translateY(-6px) rotate(5deg);
+    box-shadow:0 12px 28px rgba(216,155,29,0.35);
+}
+
+/* BOTTOM */
+
+.ve-footer-bottom{
+    margin-top:90px;
+    border-top:1px solid rgba(255,255,255,0.08);
+    background:rgba(0,0,0,0.18);
+    backdrop-filter:blur(10px);
+    padding:32px 0;
+    position:relative;
+    z-index:2;
+}
+
+.ve-footer-bottom p{
+    margin:0;
+    text-align:center;
+    color:rgba(255,255,255,0.7);
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.ve-footer-bottom span{
+    color:#d89b1d;
+    font-weight:700;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+
+    .ve-footer{
+        text-align:center;
+        padding-top:90px;
+    }
+
+    .ve-footer-desc{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .ve-footer-title::after{
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .ve-contact-list li{
+        justify-content:center;
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .ve-social-icons{
+        justify-content:center;
+    }
+
+}
+
 /* Smooth scrollbar color */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #f5f7fa; }
