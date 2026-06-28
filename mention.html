@@ -1,21 +1,26 @@
+Voici la page **Mentions légales** (`mentions.html`) construite sur le même modèle que vos autres pages (header, hero, footer, classes existantes).  
+Le contenu reprend fidèlement les informations du PDF, structuré en sections claires.  
+Le lien « Mentions légales » a été ajouté dans le menu principal, le menu mobile et le footer.
+
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Éléments UI Metrage — composants utilisés pour les projets BTP, services et formulaires.">
+    <meta name="description" content="Mentions légales du site METRAGE - Éditeur, hébergement, propriété intellectuelle, RGPD et responsabilité.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Éléments UI — Metrage</title>
+    <title>Mentions légales — Metrage</title>
 
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="img/bg-img/img7.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/custom-override.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
 
-
+<!-- ======= HEADER ======= -->
 <header class="ve-header" id="ve-sticky">
     <div class="container-fluid ve-nav-wrap">
 
@@ -29,135 +34,105 @@
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="about.html">À propos</a></li>
-                <!-- <li><a href="services.html">Services</a></li> -->
-                <li><a href="reference.html">Références Projets</a></li>
+                <li><a href="references.html">Références Projets</a></li>
                 <li><a href="post.html">Actualités</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="mention.html">Mentions Légales</a></li>
-        </ul>
+                <li><a href="mentions.html" class="active">Mentions légales</a></li>
+            </ul>
         </nav>
-
-        <div class="ve-nav-cta">
-            <a href="contact.html" class="ve-cta-btn">Contactez Nous <i class="fa fa-arrow-right"></i></a>
-        </div>
 
     </div>
     <div class="ve-mobile-menu" id="ve-mobile-menu">
         <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="about.html">Entreprise</a></li>
-            <li><a href="reference.html">Références Projets</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="references.html">Références Projets</a></li>
             <li><a href="post.html">Actualités</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="mentions.html">Mentions légales</a></li>
         </ul>
     </div>
 </header>
 
-<section class="ve-page-hero" style="background-image:url(img/bg-img/13.jpg);">
+<!-- ======= HERO ======= -->
+<section class="ve-page-hero ve-page-hero-sm" style="background-image:url(img/bg-img/10.jpg);">
     <div class="ve-page-hero-overlay"></div>
 
     <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Composants</span>
-        <h1>Éléments <span>interface</span></h1>
-
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="index.html">Accueil</a></li>
-                <li class="active">Éléments UI</li>
-            </ol>
-        </nav>
+        <span class="ve-insight-cat">Informations légales</span>
+        <h1>Mentions <span>légales</span></h1>
+        <div class="ve-post-meta-hero">
+            <span><i class="fa fa-file-text"></i> Mise à jour : Avril 2026</span>
+            <span><i class="fa fa-building"></i> METRAGE</span>
+        </div>
     </div>
 </section>
 
-<section class="ve-section ve-elements-section">
+<!-- ======= CONTENU ======= -->
+<section class="ve-section">
     <div class="container">
 
-        <!-- BUTTONS -->
-        <div class="ve-el-block">
-            <h3 class="ve-el-title"><span>01</span> Boutons</h3>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8">
 
-            <div class="ve-el-demo">
-                <a href="#" class="ve-btn-primary">Bouton principal</a>
-                <a href="#" class="ve-btn-ghost">Bouton secondaire</a>
-                <a href="#" class="ve-btn-cta">Demander un devis</a>
-            </div>
-        </div>
+                <article class="ve-article">
 
-        <!-- SERVICES -->
-        <div class="ve-el-block">
-            <h3 class="ve-el-title"><span>02</span> Services</h3>
+                    <div class="ve-article-body">
 
-            <div class="ve-services-grid">
-                <div class="ve-service-card">
-                    <h4>Métrage & devis</h4>
-                    <p>Évaluation précise des quantités et estimation des coûts.</p>
-                </div>
+                        <!-- 1. Éditeur -->
+                        <h2>1. Éditeur du site</h2>
+                        <p>
+                            <strong>Raison sociale :</strong> METRAGE<br>
+                            <strong>Forme juridique :</strong> Micro-entreprise<br>
+                            <strong>SIREN :</strong> 102 572 443<br>
+                            <strong>SIRET :</strong> 10257244300012<br>
+                            <strong>Contact :</strong> <a href="mailto:contact@metrage-services.com">contact@metrage-services.com</a>
+                        </p>
 
-                <div class="ve-service-card">
-                    <h4>Études techniques</h4>
-                    <p>Analyse complète pour garantir la faisabilité du projet.</p>
-                </div>
+                        <hr>
 
-                <div class="ve-service-card">
-                    <h4>Suivi de chantier</h4>
-                    <p>Contrôle qualité et supervision des travaux.</p>
-                </div>
-            </div>
-        </div>
+                        <!-- 2. Hébergement -->
+                        <h2>2. Hébergement</h2>
+                        <p>
+                            
+                        </p>
 
-        <!-- FAQ -->
-        <div class="ve-el-block">
-            <h3 class="ve-el-title"><span>03</span> FAQ</h3>
+                        <hr>
 
-            <div class="ve-faq-list">
+                        <!-- 3. Propriété intellectuelle -->
+                        <h2>3. Propriété intellectuelle</h2>
+                        <p>
+                            L'ensemble du contenu de ce site (textes, images, graphismes, logo, icônes, sons, logiciels...) est la propriété exclusive de METRAGE, à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.
+                        </p>
+                        <p>
+                            Toute reproduction, représentation, modification, publication, adaptation totale ou partielle des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sauf autorisation écrite préalable de METRAGE.
+                        </p>
 
-                <div class="ve-faq-item">
-                    <div class="ve-faq-q">Comment demander un devis ?</div>
-                    <div class="ve-faq-a">Contactez-nous via le formulaire ou par téléphone.</div>
-                </div>
+                        <hr>
 
-                <div class="ve-faq-item">
-                    <div class="ve-faq-q">Intervenez-vous sur tous types de projets ?</div>
-                    <div class="ve-faq-a">Oui, bâtiments, rénovations et infrastructures.</div>
-                </div>
+                        <!-- 4. Données personnelles (RGPD) -->
+                        <h2>4. Données personnelles (RGPD)</h2>
+                        <p>
+                            Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés du 6 janvier 1978 modifiée, vous disposez d'un droit d'accès, de rectification, d'effacement et de portabilité de vos données personnelles.
+                        </p>
+                        <p>
+                            Pour exercer ces droits ou pour toute question relative au traitement de vos données, vous pouvez contacter METRAGE à l'adresse suivante : <a href="mailto:contact@metrage-services.com">contact@metrage-services.com</a>.
+                        </p>
 
-                <div class="ve-faq-item">
-                    <div class="ve-faq-q">Faites-vous le suivi de chantier ?</div>
-                    <div class="ve-faq-a">Oui, avec contrôle qualité et respect des délais.</div>
-                </div>
+                        <hr>
 
-            </div>
-        </div>
+                        <!-- 5. Limitation de responsabilité -->
+                        <h2>5. Limitation de responsabilité</h2>
+                        <p>
+                            Les informations contenues sur ce site sont aussi précises que possible et le site est régulièrement mis à jour. Cependant, METRAGE ne peut garantir l'exactitude, la complétude ni l'actualité des informations diffusées.
+                        </p>
+                        <p>
+                            METRAGE ne saurait être tenu responsable des dommages directs ou indirects résultant de l'utilisation de ce site ou de l'accès à des sites tiers via des liens hypertextes.
+                        </p>
 
-        <!-- PROCESS -->
-        <div class="ve-el-block">
-            <h3 class="ve-el-title"><span>04</span> Processus</h3>
+                    </div>
 
-            <div class="ve-process-grid">
-
-                <div class="ve-process-step">
-                    <div class="ve-process-num">01</div>
-                    <h5>Analyse du projet</h5>
-                    <p>Étude des besoins et faisabilité.</p>
-                </div>
-
-                <div class="ve-process-step">
-                    <div class="ve-process-num">02</div>
-                    <h5>Métrage & devis</h5>
-                    <p>Calcul précis des quantités et coûts.</p>
-                </div>
-
-                <div class="ve-process-step">
-                    <div class="ve-process-num">03</div>
-                    <h5>Suivi des travaux</h5>
-                    <p>Contrôle et coordination du chantier.</p>
-                </div>
-
-                <div class="ve-process-step">
-                    <div class="ve-process-num">04</div>
-                    <h5>Livraison</h5>
-                    <p>Projet terminé dans les délais.</p>
-                </div>
+                </article>
 
             </div>
         </div>
@@ -165,9 +140,9 @@
     </div>
 </section>
 
+<!-- ======= FOOTER ======= -->
 <footer class="ve-footer">
 
-    <!-- Decorative Background -->
     <div class="ve-footer-overlay"></div>
 
     <div class="container">
@@ -208,7 +183,6 @@
             </div>
 
             <!-- CENTER -->
-            <!-- CENTER -->
             <div class="col-12 col-lg-4">
 
                 <h4 class="ve-footer-title">
@@ -232,7 +206,7 @@
                     </li>
 
                     <li>
-                        <a href="reference.html">
+                        <a href="references.html">
                             <i class="fas fa-angle-right"></i>
                             References Projets
                         </a>
@@ -252,11 +226,18 @@
                         </a>
                     </li>
 
+                    <li>
+                        <a href="mentions.html">
+                            <i class="fas fa-angle-right"></i>
+                            Mentions légales
+                        </a>
+                    </li>
+
                 </ul>
 
             </div>
 
-             <!-- RIGHT -->
+            <!-- RIGHT -->
             <div class="col-12 col-lg-4">
 
                 <h4 class="ve-footer-title">
@@ -330,11 +311,6 @@
 
 </footer>
 
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <script src="js/bootstrap/popper.min.js"></script>
-    <script src="js/bootstrap/bootstrap.min.js"></script>
-    <script src="js/plugins/plugins.js"></script>
-    <script src="js/active.js"></script>
-    <script src="js/vaultedge.js"></script>
 </body>
 </html>
+```
